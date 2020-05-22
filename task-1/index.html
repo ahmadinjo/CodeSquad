@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Cheat Sheet</title>
+    <link rel="shortcut icon" href="images/app-indicator.svg" type="images/x-svg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .underline {
+            width: 95%;
+            height: .2rem;
+            background-color: rgb(166, 235, 183);
+            margin: 0 auto 2rem;
+        }
+
+        .heading-underline {
+            width: 5rem;
+            height: .3rem;
+            background-color: rgb(30, 116, 187);
+            margin: 0 auto 2rem;
+        }
+
+        .home{
+            width: 95%;
+            height: 60.5vh;
+            border-radius: 30px;
+            margin: auto;
+            position: relative;
+            background: url(images/web-2.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .home-wrap {
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            text-align: center;
+            top: 30%;
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+
+        .home-wrap h1 {
+            font-size: 3.8rem;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-shadow: .1rem .1rem .8rem rgb(166, 235, 183);
+            padding-bottom: 1rem;
+        }
+
+        .home-wrap h3 {
+            font-size: 2rem;
+            text-shadow: .1rem .1rem .5rem rgb(166, 235, 183);
+        }
+
+        .btn {
+            width: 30%;
+            margin-top: 3rem;
+            padding: 0.85rem 1rem;
+            border-radius: 30px;
+            border: 0.2rem solid rgb(166, 235, 183);
+            font-size: 1.5rem;
+            margin: auto;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .heading {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding-bottom: .4rem;
+        text-align: center;
+        }
+
+        .container {
+            margin: auto;
+            text-align: center;
+        }
+
+        .services {
+            width: 95%;
+            border: 0.1rem thin white;
+            border-radius: 30px;
+            padding: 0.5rem;
+            margin: 1rem auto;
+            color: white;
+            background: rgb(166, 235, 183);
+        }
+
+        .services ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0.5rem 0.2rem 0.5rem 0.2rem!important ;
+            display: flex;
+            align-items: center;
+        }
+
+        .services ul li {
+            align-items: center;
+        }
+
+        .services ul li img {
+            width: 30%;
+        }
+
+        .services ul li h3 {
+            font-size: 1.7rem;
+            text-shadow: .1rem .1rem .5rem rgb(2, 2, 2);
+        }
+
+        .services ul li p {
+            margin: 0.1rem;
+            color: black;
+        }
+
+        .about {
+            width: 95%;
+            height: 70vh;
+            border: 0.1rem thin white;
+            border-radius: 30px;
+            padding: 0.5rem;
+            margin: 1rem auto;
+            color: white;
+            background: url(images/web-3.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .mission {
+            float: left;
+            width: 45%;
+            border-right: 1px solid white;
+            padding-right: 5%;
+        }
+        .vision {
+            float: right;
+            width: 45%;
+        }
+
+        .contact {
+            width: 95%;
+            border: 0.1rem thin white;
+            border-radius: 30px;
+            padding: 0.5rem;
+            margin: 1rem auto;
+            color: white;
+            background: rgb(166, 235, 183);
+        }
+
+        .contact-p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <!-- Navigation Start -->
+        <table class="nav">
+            <thead>
+                <tr>
+                    <th><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></th>
+                    <th><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></th>
+                    <th><a href="#services" target="_blank" rel="noopener noreferrer">Services</a></th>
+                    <th><a href="#about" target="_blank" rel="noopener noreferrer">About</a></th>
+                    <th><a href="#contact">Contact</a></th>
+                </tr>
+            </thead>
+        </table>
+        <!-- Navigation End -->
+        
+    </header>
+    <div class="underline"></div>
+    <!-- Start Home Section -->
+    <div class="home">
+        <div class="home-wrap">
+            <h1>CodeSquad Internship</h1>
+            <h3>An avenue to building a successful brand</h3>
+            <div class="btn"><a href="#services" >Services</a></div>
+        </div>
+    </div>
+    <!-- End Home Section -->
+
+    <!-- Start of Products and Services -->
+    <div class="services" id="services">
+        <div class="container">
+            <div>
+                <h2 class="heading">Services</h2>
+                <div class="heading-underline"></div>
+            </div>
+            <ul>
+                <li>
+                    <img src="images/webauthn.svg" alt="web dev">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse reprehenderit officiis earum laboriosam facilis corrupti, nemo architecto nobis cum dolore deserunt asperiores tempora molestiae eius veniam quibusdam numquam iste!</p>
+                </li>
+                <li>
+                    <img src="images/code-slash.svg" alt="web app">
+                    <h3>Web Application</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio temporibus incidunt enim doloribus rerum voluptates ea consequatur voluptas, aliquid, molestiae nemo dolores deserunt tenetur fuga blanditiis a ipsum</p>
+                </li>
+                <li>
+                    <img src="images/briefcase.svg" alt="Internship">
+                    <h3>Internship</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nisi illum ipsam aliquid dolor inventore! Mollitia corporis eligendi ut repellendus recusandae fugiat unde quibusdam, eum laudantium optio aliquam,</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Products and Services -->
+
+    <!-- Start of About Section -->
+    <div class="about" id="about">
+        <div class="container">
+            <div>
+                <h2 class="heading">About us</h2>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorem voluptatum quaerat distinctio aperiam nesciunt ipsam, repudiandae molestiae perspiciatis ab consequatur qui accusamus dolor officia aliquid cumque modi, harum quo?</p>
+            </div>
+            <div class="vision">
+                <h3>Vision</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti optio animi, quibusdam libero sit atque vero error in eaque deserunt ex et adipisci nostrum sed fugiat temporibus dolores doloribus. Eum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of About Section -->
+
+    <!-- Start of Contact Section -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div>
+                <h2 class="heading">Our contact</h2>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <p><address>No 1, Lajorin Street, Offa Road, Ilorin,<br>Kwara State.</address></p>
+            </div>
+            <div class="phone-no">
+                <h3>Phone</h3>
+                <p><a href="tel:+2349082171728">+2349082171728</a> , <a href="tel:+2348162609437">+2348162609437</a></p>
+            </div>
+            <div class="email">
+                <h3>Email Address</h3>
+                <p><a href="mailto:hello@codesquad.co">hello@codesquad.co</a></p>
+            </div>
+            <div class="website">
+                <h3>Website</h3>
+                <p><a href="http://www.codesquad.co">codesquad.co</a></p>
+            </div>
+        </div>
+    </div>
+    <hr class="first-hr">
+
+    <hr class="first-hr">
+    <footer id="main-footer">
+        <img src="images/code.png" alt="codesquad">
+        <address>
+            <p>No 1, Lajorin Street, off Offa Road,<br>Ilorin, Kwara State,<br>Nigeria.</p>
+        </address>
+        <ul>
+            <li>
+                <a href="#">Terms of Service</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p>Copyright &copy; 2020, Codesquad</p>
+    </footer>
+</body>
+</html>
