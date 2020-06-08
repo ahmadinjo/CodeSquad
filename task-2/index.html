@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/code-slash.svg" type="image/x-svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CodeSquad</title>
+  </head>
+  <body>
+    
+    <div class="experimental">
+        <div class="container">
+            <div class="login">
+                <a href="#up">
+                    <img class="go-up" src="images/arrow-up.svg" alt="go-up" width="50" height="50">
+                </a>
+                <form action="javascript:void()" method="post">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <button type="submit">Login</button>
+                    <button type="submit"><a href="https://codesquad.co/register">Register</a></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Header with Logo and Menu Bar -->
+    <header id="up">
+      <div class="main-header">
+        <div class="logo">
+          <a href="#">
+            <img
+              class="desktop-icon"
+              width="150"
+              height="35"
+              src="images/code.png"
+              alt="CodeSquad Logo"
+            />
+            <img
+              class="mobile-icon"
+              width="17"
+              height="17"
+              src="images/icon.png"
+              alt="CodeSquad Logo"
+            />
+          </a>
+        </div>
+        <div class="menu-nav">
+          <nav>
+            <ul class="topnav" id="dropdownClick">
+              <li><a href="#">Home</a></li>
+              <li><a href="#intro">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#my-team">My Team</a></li>
+              <li class="dropdownIcon float-right">
+                <a onclick="dropdownMenu()" href="javascript:void()">&#9776;</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="intro">
+      <h2>Introduction to Programming</h2>
+      <div class="hr"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 section-hr">
+            <figure>
+              <div class="section-img">
+                <img
+                  src="images/web-3.jpg"
+                  width="500"
+                  height="450"
+                  alt="Code Snippet"
+                />
+              </div>
+              <figcaption>Coding is fun</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 art">
+            <article>
+              <h3>A Quick Look</h3>
+              <div class="section-article">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam maxime quis, necessitatibus cum ipsa modi quam assumenda
+                  ut voluptates, est omnis itaque minus quod aut expedita
+                  voluptatibus accusamus? Unde, similique. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Iste atque ullam quasi
+                  facilis, minima quos nulla ea! Fuga cupiditate, sunt numquam,
+                  dignissimos vitae necessitatibus deserunt quisquam quia
+                  inventore perspiciatis odit?<br /><span id="quickLook"
+                    ><a onclick="readMore()">Read More ...</a></span
+                  >
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Mission & Vision</h2>
+      <div class="hr"></div>
+      <div class="container">
+        <div class="mission-vision">
+          <div class="col-6 mission">
+            <h1>Our Mission</h1>
+            <div class="statement">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                    asperiores assumenda reprehenderit eveniet enim quia. Nemo
+                    adipisci voluptatum obcaecati voluptates porro, modi minima
+                    cupiditate eaque ut et numquam, mollitia placeat.
+
+                </p>
+            </div>
+          </div>
+          <div class="col-6 vision">
+            <h1>Our Vision</h1>
+            <div class="statement">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                    asperiores assumenda reprehenderit eveniet enim quia. Nemo
+                    adipisci voluptatum obcaecati voluptates porro, modi minima
+                    cupiditate eaque ut et numquam, mollitia placeat. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit.
+
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="my-team">
+      <h2>Gallery</h2>
+      <div class="hr"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3 team">
+            <figure>
+              <div class="gallery-img">
+                <img
+                  src="images/user1.png"
+                  width="108"
+                  height="108"
+                  alt="team mates"
+                />
+                <div class="details">
+                    <label for="name">Kolade E.A.</label>
+                    <label for="email"><a href="mailto:ahmadinjo@codesquad.co"><img src="images/envelope-fill.svg" alt="email" width="17" height="17">contact mail</a></label>
+                    <label for="facebook"><a href="https://www.facebook.com/ahmadinjo" target="_blank"><img src="images/facebook.svg" alt="email" width="17" height="17">@lizbeth</a></label>
+                    <label for="twitter"><a href="https://www.twitter.com/ahmadinjo" target="_blank"><img src="images/twitter.svg" alt="email" width="17" height="17">@lizbeth</a></label>
+                </div>
+              </div>
+              <figcaption>Software Engineer</figcaption>
+            </figure>
+          </div>
+          <div class="col-3 team">
+            <figure>
+              <div class="gallery-img">
+                <img
+                  src="images/user2.png"
+                  width="108"
+                  height="108"
+                  alt="team mates"
+                />
+                <div class="details">
+                    <label for="name">Bolade E.V.</label>
+                    <label for="email"><a href="mailto:ahmadinjo@codesquad.co"><img src="images/envelope-fill.svg" alt="email" width="17" height="17">contact mail</a></label>
+                    <label for="facebook"><a href="https://www.facebook.com/ahmadinjo" target="_blank"><img src="images/facebook.svg" alt="email" width="17" height="17">@ecalculus</a></label>
+                    <label for="twitter"><a href="https://www.twitter.com/ahmadinjo" target="_blank"><img src="images/twitter.svg" alt="email" width="17" height="17">@ecalculus</a></label>
+                </div>
+              </div>
+              <figcaption>Operations Manager</figcaption>
+            </figure>
+          </div>
+          <div class="col-3 team">
+            <figure>
+              <div class="gallery-img1">
+                <img
+                  src="images/client1.png"
+                  width="108"
+                  height="108"
+                  alt="team mates"
+                />
+                <div class="details">
+                    <label for="name">Aduojo J.A.</label>
+                    <label for="email"><a href="mailto:ahmadinjo@codesquad.co"><img src="images/envelope-fill.svg" alt="email" width="17" height="17">contact mail</a></label>
+                    <label for="facebook"><a href="https://www.facebook.com/ahmadinjo" target="_blank"><img src="images/facebook.svg" alt="email" width="17" height="17">@abdullah</a></label>
+                    <label for="twitter"><a href="https://www.twitter.com/ahmadinjo" target="_blank"><img src="images/twitter.svg" alt="email" width="17" height="17">@abdullah</a></label>
+                </div>
+              </div>
+              <figcaption>C.E.O.</figcaption>
+            </figure>
+          </div>
+          <div class="col-3 team">
+            <figure>
+              <div class="gallery-img1">
+                <img
+                  src="images/client2.png"
+                  width="108"
+                  height="108"
+                  alt="team mates"
+                />
+                <div class="details">
+                    <label for="name">Busari A.O.</label>
+                    <label for="email"><a href="mailto:ahmadinjo@codesquad.co"><img src="images/envelope-fill.svg" alt="email" width="17" height="17">contact mail</a></label>
+                    <label for="facebook"><a href="https://www.facebook.com/ahmadinjo" target="_blank"><img src="images/facebook.svg" alt="email" width="17" height="17">@ahmadinjo</a></label>
+                    <label for="twitter"><a href="https://www.twitter.com/ahmadinjo" target="_blank"><img src="images/twitter.svg" alt="email" width="17" height="17">@ahmadinjo</a></label>
+                </div>
+              </div>
+              <figcaption>Intern</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobile-stack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-8 float-left">
+                <p>Copyright &copy; 2020, Ahmadinjo Inc.</p>
+            </div>
+            <div class="col-4 float-right">
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
