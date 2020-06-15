@@ -302,10 +302,14 @@ hr.hr-force {
   margin-top: -4.5rem;
 }
 
-nav.navbar-dark {
-  background-color: #202020 !important;
-  opacity: 0.85;
+nav.navbar-light {
+  background-color: #e0e0e0 !important;
+  opacity: 0.75;
   z-index: 1;
+}
+
+nav.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #000000!important;
 }
 
 .footer-social a {
@@ -409,7 +413,7 @@ nav.navbar-dark {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
- /* Experimentals Animations */
+/* Experimentals Animations */
 /*  .nav-tabs .tab-pane.fade.show {
      animation: silde-down 2s ease-out;
  }
@@ -432,11 +436,11 @@ nav.navbar-dark {
     }
  } */
 
- .anime .tab-pane.fade {
-     transition: all 2s;
-     transform: translateY(50%);
- }
+.anime .tab-pane.fade {
+  transition: all 0.5s;
+  transform: translateY(50%);
+}
 
 .anime .tab-pane.fade.show {
-     transform: translateY(0rem);
- }
+  transform: translateY(0rem);
+}
