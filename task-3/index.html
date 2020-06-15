@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3 - Bootstrap 4</title>
+    <link
+      rel="stylesheet"
+      href="../maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../use.fontawesome.com/releases/v5.6.3/css/all.min.css"
+    />
+    <script src="../use.fontawesome.com/releases/v5.6.3/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Desktop Extras (Experimental) -->
+    <div class="container-fluid d-none d-lg-block">
+      <div class="row py-4">
+        <div class="col-4">
+          <img src="img/code.png" alt="codesquad logo" />
+          <h3 class="logo-header">Your Reliable Builder ...</h3>
+        </div>
+        <div class="col-5 reach">
+          <h5>Contact Us</h5>
+          <div class="top-underline my-1"></div>
+          <div>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+              facebook.com/codesquad</a
+            >
+          </div>
+          <div>
+            <a href="">
+              <i class="fab fa-twitter-square"></i>
+              @codesquad</a
+            >
+          </div>
+          <div>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+              @codesquad</a
+            >
+          </div>
+          <div class="dropdown">
+            <a
+              type="button"
+              class="btn btn-outline-info my-3 dropdown-toggle"
+              href=""
+              data-toggle="dropdown"
+            >
+              <i class="far fa-envelope"></i>
+              support@codesquad.co</a
+            >
+            <form class="dropdown-menu p-4">
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail2">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleDropdownFormEmail2"
+                  placeholder="email@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Message:</label>
+                <textarea
+                  class="form-control"
+                  name="Message"
+                  id="message"
+                  rows="3"
+                ></textarea>
+              </div>
+              <a
+                type="button"
+                class="btn btn-info"
+                href="mailto:muizzah@codesquad.co"
+                >Send</a
+              >
+            </form>
+          </div>
+        </div>
+        <div class="col">
+          <form class="form-group top-form">
+            <label for="email" class="mr-sm-2">Email:</label>
+            <input
+              type="email"
+              class="form-control mb-2 mr-sm-2"
+              placeholder="email"
+              id="email"
+            />
+            <label for="pwd" class="mr-sm-2">Password:</label>
+            <input
+              type="password"
+              class="form-control mb-2 mr-sm-2"
+              placeholder="password"
+              id="pwd"
+            />
+            <button type="submit" class="btn btn-primary mb-2 mr-sm-2">
+              Sign In
+            </button>
+            <button type="submit" class="btn btn-primary mb-2 mr-sm-2">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">Ahmadinjo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              type="button"
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Services</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#htmlpage">HTML 5</a>
+              <a class="dropdown-item" href="#csspage">CSS 3</a>
+              <a class="dropdown-item" href="#bootstrappage">Bootstrap 4</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team" team>Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#signin">Sign In</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#signup">Sign Up</a>
+          </li>
+        </ul>
+        <form class="form-inline d-none d-lg-block">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Carousel Image Slider -->
+    <div id="topSlides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#topSlides" data-slide-to="0" class="active"></li>
+        <li data-target="#topSlides" data-slide-to="1"></li>
+        <li data-target="#topSlides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="img/slide1.jpg" alt="First slide" />
+          <div class="carousel-caption">
+            <h1>HTML 5</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit..</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              VIEW DEMO
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide2.jpg" alt="Second slide" />
+          <div class="carousel-caption">
+            <h1>CSS 3</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              VIEW DEMO
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide3.jpg" alt="Third slide" />
+          <div class="carousel-caption">
+            <h1>Bootstrap 4</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              VIEW DEMO
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev d-none d-md-flex"
+        href="#topSlides"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next d-none d-md-flex"
+        href="#topSlides"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Introduction Paragraph -->
+    <div class="container-fluid padding jumbotron my-0">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Built with ease.</h1>
+        </div>
+        <hr class="hr-force" />
+        <div class="col-12">
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            voluptates ipsa, tempore vitae sapiente eaque provident distinctio
+            voluptatem dolorum pariatur optio totam nam in commodi fugit veniam
+            molestias velit nostrum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <div class="services py-lg-5">
+      <div
+        class="container bg-transparent text-light my-0 shadow-lg"
+        id="services"
+      >
+        <div class="col-12 text-center">
+          <h3 class="heading">Our Services</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a data-toggle="tab" href="#html" class="nav-link active">HTML 5</a>
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" href="#css" class="nav-link">CSS 3</a>
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" href="#bootstrap" class="nav-link"
+              >Bootstrap 4</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content pt-5">
+          <div class="container tab-pane active" id="html">
+            <div class="row mb-5">
+              <div class="col-lg-6">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Built with the latest version of HTML, HTML 5</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Beatae officia delectus quo adipisci blanditiis reprehenderit
+                  magni laudantium atque, fugit laboriosam ducimus nemo ipsam,
+                  iure amet voluptatum qui numquam mollitia accusantium.
+                </p>
+                <a class="btn btn-primary" href="#" role="button"
+                  >Read More ...</a
+                >
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img
+                  src="img/slide1.jpg"
+                  alt="desk"
+                  class="img-fluid shadow-lg"
+                />
+              </div>
+              <div class="clearfix"></div>
+              <hr />
+            </div>
+          </div>
+          <div class="container-fluid tab-pane fade" id="css">
+            <div class="row mb-5">
+              <div class="col-lg-6">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Built with the latest version of CSS, CSS 3</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime, inventore? Debitis sunt itaque quos hic? Officiis,
+                  quae minima temporibus maxime ducimus quis a laborum!
+                  Voluptatibus voluptas eveniet eius tenetur amet?
+                </p>
+                <a class="btn btn-primary" href="#" role="button"
+                  >Read More ...</a
+                >
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img
+                  src="img/slide2.jpg"
+                  alt="desk"
+                  class="img-fluid shadow-lg"
+                />
+              </div>
+              <div class="clearfix"></div>
+              <hr />
+            </div>
+          </div>
+          <div class="container tab-pane fade" id="bootstrap">
+            <div class="row mb-5">
+              <div class="col-lg-6">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP4</h3>
+                <p>Built with the latest version of Bootstrap, Bootstrap 4</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia qui sapiente ratione itaque, quae optio eaque incidunt
+                  sed molestiae distinctio aperiam repellendus est deserunt,
+                  ipsa beatae illo, aliquam reiciendis repellat.
+                </p>
+                <a class="btn btn-primary" href="#" role="button"
+                  >Read More ...</a
+                >
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img
+                  src="img/slide3.jpg"
+                  alt="desk"
+                  class="img-fluid shadow-lg"
+                />
+              </div>
+              <div class="clearfix"></div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="containe-fluid padding" id="team">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Meet the Team</h1>
+        </div>
+        <hr class="hr-force" />
+      </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="shadow card h-100 bg-white">
+            <div class="card-header">
+              <h3>Software Developer</h3>
+            </div>
+            <img class="card-img-top" src="img/img_avatar1.png" alt="team" />
+            <div class="card-body">
+              <h1 class="card-title">Ridwan ****</h1>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis illo labore autem, aliquam accusamus harum provident
+                sit impedit molestiae neque voluptatibus nulla possimus?
+                Repudiandae suscipit illo repellat delectus! Unde, laudantium!
+              </p>
+              <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="shadow card h-100">
+            <div class="card-header">
+              <h3>Chief Executive Officer</h3>
+            </div>
+            <img class="card-img-top" src="img/img_avatar5.png" alt="team" />
+            <div class="card-body">
+              <h1 class="card-title">Muizzah ****</h1>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis illo labore autem, aliquam accusamus harum provident
+                sit impedit molestiae neque voluptatibus nulla possimus? Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+                illo labore autem, aliquam accusamus harum provident sit impedit
+                molestiae neque voluptatibus nulla possimus? Repudiandae
+                suscipit illo repellat delectus! Unde, laudantium!
+              </p>
+              <a href="#" class="btn btn-outline-secondary stretched-link"
+                >See Profile</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="shadow card h-100">
+            <div class="card-header">
+              <h3>Data Analyst</h3>
+            </div>
+            <img class="card-img-top" src="img/img_avatar3.png" alt="team" />
+            <div class="card-body">
+              <h1 class="card-title">Emmanuel Bolade</h1>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="btn btn-outline-secondary">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Philosophy -->
+    <div class="container-fluid padding" id="about">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2>Our Philosophy ...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum
+            unde dolore aut. Accusamus dignissimos libero ratione nihil neque
+            amet?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            possimus quas accusamus odit quisquam deserunt consequuntur placeat
+            vel ipsa, modi recusandae expedita totam, cupiditate facilis dolore.
+            Quibusdam aliquid unde molestiae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Harum consequatur accusamus doloribus
+            recusandae ad. Ipsa explicabo minus quae distinctio similique
+            repudiandae voluptatum optio? Tempora minus impedit repellendus,
+            numquam suscipit reiciendis!
+          </p>
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <img src="img/bootstrap2.png" alt="desk" class="img-fluid shadow" />
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+
+    <!-- Our Goals -->
+    <div class="container mb-5">
+      <div class="col-12 text-center">
+        <h3 class="heading">Our Goals</h3>
+        <div class="heading-underline"></div>
+      </div>
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a href="#mission" class="nav-link active" data-toggle="pill"
+            >Mission</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#vision" class="nav-link" data-toggle="pill">Vision</a>
+        </li>
+      </ul>
+      <div class="tab-content anime">
+        <div id="mission" class="container tab-pane active fade show">
+          <br />
+          <h3>Mission</h3>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            quasi dolorum fugiat quaerat, recusandae molestias quas! Illum
+            tenetur necessitatibus harum voluptates, minima dolorem repellendus
+            doloribus ipsam eaque mollitia qui tempora!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            natus doloremque consequatur facilis aspernatur eaque totam magni
+            voluptates sapiente velit, mollitia unde quo perferendis quaerat
+            dignissimos eum et dolore laboriosam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia
+            assumenda adipisci, perspiciatis, aperiam iure suscipit soluta
+            doloremque ad mollitia quae corporis beatae, ratione ipsam id atque
+            facilis. Pariatur, aperiam?
+          </p>
+        </div>
+        <div id="vision" class="container tab-pane fade">
+          <br />
+          <h3>Vision</h3>
+          <p class="lead">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+            cumque ratione itaque tempore modi tempora soluta! Provident
+            doloremque eligendi ea quam, expedita rerum dolores deleniti dolore
+            consequuntur adipisci labore voluptatem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae
+            modi inventore quasi impedit ipsa, provident sint magni explicabo!
+            Nihil ratione porro commodi sapiente. Eius aperiam dolore inventore
+            doloremque quasi!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+            fugiat nihil, temporibus molestiae eaque vitae alias amet quas
+            delectus. Accusantium, nulla at unde fugiat blanditiis nemo itaque
+            voluptatum? Consequuntur, porro!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/code.png" alt="" />
+            <hr class="light" />
+            <p>+234-(816)-557-6840</p>
+            <p>email@codesquad.com</p>
+            <p>01, Lajorin Street</p>
+            <p>Ilorin, Kwara State, 240103</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>Our hours</h5>
+            <hr class="light" />
+            <p>Monday: 8A.M. - 5P.M.</p>
+            <p>Saturday: 10A.M. - 3P.M.</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>Service Area</h5>
+            <hr class="light" />
+            <p>Ilorin, Kwara State, 240103</p>
+            <p>Ikeja, Lagos State, 240103</p>
+            <p>Abuja, F.C.T., 240103</p>
+            <p>P. Harcourt, Rivers State, 240103</p>
+            <p>Kano, Kano State, 240103</p>
+          </div>
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5 class="float-left">
+              Copyright <i class="far fa-copyright"></i> Codesquad LLC. All
+              Rights Reserved
+            </h5>
+            <span class="float-right footer-social">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
