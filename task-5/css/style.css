@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+  line-height: 1.6rem;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 5rem;
+  margin-top: -5rem;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: teal;
+  text-transform: uppercase;
+}
+
+/* Navigation Styles */
+nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: teal !important;
+}
+
+.navbar-brand img:hover {
+  background: linear-gradient(to right, #ffffff, #000000, #ffffff);
+  background-clip: content-box;
+  -webkit-background-clip: content-box;
+  -webkit-text-fill-color: transparent;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #3f3e3e;
+}
+
+.navbar.navbar-dark a.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar.navbar-dark .navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar.navbar-dark .nav-item {
+  margin-right: 10px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link.active {
+  background: linear-gradient(
+    to right,
+    #000000,
+    #ffffff,
+    #000000,
+    #000000,
+    #ffffff,
+    #000000
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #3f3e3e;
+}
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #000000,
+    #ffffff,
+    #ffffff,
+    #000000,
+    #ffffff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #3f3e3e;
+}
+
+/* Top Slides Carousel Styles */
+#topSlides .carousel-indicators {
+  bottom: 5%;
+}
+
+#topSlides .carousel-indicators li {
+  height: 16px;
+  width: 16px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: teal;
+}
+#topSlides .carousel-indicators li.active {
+  background-color: black;
+}
+
+#topSlides .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+#topSlides .carousel-inner .carousel-item .carousel-caption {
+  max-width: 100%;
+  bottom: 25%;
+}
+
+#topSlides .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#topSlides .carousel-inner .carousel-item .carousel-caption button {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: teal;
+  color: white;
+  text-transform: uppercase;
+}
+#topSlides .carousel-inner .carousel-item .carousel-caption button:hover {
+  background-color: rgb(0, 88, 88);
+}
+
+/* Reservation Section Styles */
+.form .form-btn {
+  padding-top: 1.6rem;
+  text-align: end;
+}
+
+.form .form-btn button.btn {
+  background-color: teal;
+  color: white;
+  text-transform: uppercase;
+}
+.form .form-btn button.btn:hover {
+  background-color: rgb(0, 88, 88);
+}
+
+/* Rooms Section Styles */
+#rooms.rooms {
+  position: relative;
+}
+
+.rooms .lead {
+  margin: 1rem;
+}
+
+#roomSlides.carousel {
+  margin-top: 5px;
+}
+
+/* Facilities Section Styles */
+#facilities.facilities {
+  margin-bottom: 2rem;
+}
+
+#facilities.facilities .before-bg {
+  margin-bottom: 2rem;
+}
+
+#facilities.facilities .fixed-background {
+  padding-bottom: 2rem;
+  color: white;
+}
+
+/* Facilicities Section Background Styles */
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  background-image: url(../img/wall.jpg);
+  z-index: -1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#facilities.facilities .fixed-background .facility-fa {
+  padding: 2rem 2rem 0;
+}
+
+/* Testimonial Section Styles */
+#testimonial.testimonial {
+  position: relative;
+}
+
+#testimonial.testimonial .test .figure-img.img-fluid {
+  width: 30%;
+}
+
+/* Contact Us Section Styles */
+#contact.contact {
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contact.contact img {
+  width: 100%;
+  height: 100%;
+}
+
+#contact.contact .contact-form {
+  background-color: teal;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
+#contact.contact .contact-form .form-btn {
+  text-align: center;
+  padding-top: 0;
+}
+
+#contact.contact .contact-form .form-btn button {
+  width: 98%;
+  font-size: 1rem;
+  background-color: whitesmoke;
+  color: inherit;
+  text-transform: none;
+}
+#contact.contact .contact-form .form-btn button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+/* Footer Section Styles */
+footer {
+  width: 100%;
+  padding-top: 2rem;
+  background-color: teal;
+  color: white;
+}
+
+footer .container .row ul {
+  list-style-type: none;
+}
+
+footer .container .row ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer .container .row div.col-md-4:not(:nth-of-type(2)) ul {
+  padding-left: 0.2rem;
+}
+
+footer .container .row div.col-md-4 .fas-list {
+  padding-left: 1.9rem;
+}
+
+footer .container .row div.col-md-4 .fas-list li {
+  position: relative;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-linkedin-in {
+  color: aliceblue;
+}
+
+.fa-instagram {
+  color: #e67458;
+}
+
+footer
+  .container
+  .row
+  div.col-md-4
+  .fas-list
+  li:not(:last-of-type)
+  svg.svg-inline--fa {
+  font-size: 0.9rem;
+  position: absolute;
+  margin-left: -1.5rem;
+  top: 25%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  #topSlides .carousel-inner .carousel-item .carousel-caption {
+    max-width: 100%;
+    bottom: 35%;
+  }
+
+  #topSlides .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  #topSlides .carousel-inner .carousel-item .carousel-caption button {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .rooms h5 {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 2rem 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #topSlides .carousel-inner .carousel-item .carousel-caption {
+    max-width: 100%;
+    bottom: 40%;
+  }
+
+  #topSlides .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  #topSlides .carousel-inner .carousel-item .carousel-caption button {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  #reservation .form .form-group {
+    padding-right: 0;
+    padding-left: 7px;
+  }
+
+  #reservation .form .form-group input {
+    font-size: 0.85rem;
+    padding-left: 10px;
+  }
+
+  .form .form-btn {
+    text-align: center;
+  }
+
+  .form .form-btn button.btn {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .rooms h5 {
+    font-size: 1.5rem;
+  }
+
+  #testimonial.testimonial .test .figure-img.img-fluid {
+    width: 20%;
+  }
+}
+
+/* Carousel Indicators Styles for Rooms and Testimonial Sections */
+.carousel-control {
+  position: absolute;
+  display: flex;
+  top: 5rem;
+  right: 50px;
+  height: 50px;
+  color: black;
+}
+
+.carousel-control a {
+  float: left;
+  color: black;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.301);
+  width: 43px;
+  height: 43px;
+  position: relative;
+  margin: 5px;
+  opacity: 1;
+}
