@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmo City Hotel</title>
+    <link
+      rel="stylesheet"
+      href="../maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../use.fontawesome.com/releases/v5.6.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="row top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top col-lg-9"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><h2 class="text-center">
+            COSMO<br />
+            <span>City</span>
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler mr-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#responsiveNavbar"
+          aria-controls="responsiveNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="responsiveNavbar">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 d-lg-none">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms &amp; Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">Facilities</a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav breadcrumb ml-auto mt-2 my-lg-auto mx-lg-auto d-none d-lg-flex"
+          >
+            <li class="nav-item breadcrumb-item">
+              <a class="breadcrumb-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item breadcrumb-item">
+              <a class="breadcrumb-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item breadcrumb-item">
+              <a class="breadcrumb-link" href="rooms.html">Rooms &amp; Rates</a>
+            </li>
+            <li class="nav-item breadcrumb-item">
+              <a class="breadcrumb-link" href="facilities.html">Facilities</a>
+            </li>
+          </ul>
+          <div class="social d-lg-none">
+            <a class="social-link" href="#"
+              ><i class="fab fa-twitter fa-1x fa-fw"></i
+            ></a>
+            <a class="social-link" href="#"
+              ><i class="fab fa-facebook-f fa-1x fa-fw"></i
+            ></a>
+            <a class="social-link" href="#"
+              ><i class="fab fa-pinterest-p fa-1x fa-fw"></i
+            ></a>
+            <a class="social-link" href="#"
+              ><i class="fab fa-instagram-square fa-1x fa-fw"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div class="social col-lg-3">
+        <a class="social-link" href="#"
+          ><i class="fab fa-twitter fa-1x fa-fw"></i
+        ></a>
+        <a class="social-link" href="#"
+          ><i class="fab fa-facebook-f fa-1x fa-fw"></i
+        ></a>
+        <a class="social-link" href="#"
+          ><i class="fab fa-pinterest-p fa-1x fa-fw"></i
+        ></a>
+        <a class="social-link" href="#"
+          ><i class="fab fa-instagram-square fa-1x fa-fw"></i
+        ></a>
+      </div>
+    </div>
+    <!-- End of Navigation Bar -->
+
+    <!-- Slider -->
+    <div class="slider">
+      <div
+        id="carouselId"
+        class="carousel"
+        data-ride="false"
+        data-interval="false"
+      >
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="img/hotel-0.jpg" alt="First slide" />
+            <div class="carousel-caption d-none d-sm-block">
+              <h3>Welcome</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam quam laborum
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hotel-1.jpg" alt="Second slide" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Welcome</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam quam laborum
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hotel-2.jpg" alt="Third slide" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Welcome</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam quam laborum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-next d-none d-sm-block"
+        href="#carouselId"
+        role="button"
+        data-slide="next"
+      >
+        <span class="fas fa-angle-down fa-7x" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End of Slide -->
+
+    <!-- Booking Section -->
+    <div id="booking-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <form action="#" class="form" name="booking-form">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap"
+              >
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control datepicker"
+                    name="arrival"
+                    id="arrival"
+                    title="Arrival"
+                    required
+                  />
+                  <div class="input-placeholder">Arrival</div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="checkOut"
+                    id="check-out"
+                    title="Departure"
+                    required
+                  />
+                  <div class="input-placeholder">Departure</div>
+                </div>
+                <div class="form-group">
+                  <select
+                    class="custom-select"
+                    name="adults"
+                    id="adults"
+                    title="No of Adults staying?"
+                    required
+                  >
+                    <option selected>Adults</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select
+                    class="custom-select"
+                    name="children"
+                    id="children"
+                    title="No of Children staying?"
+                    required
+                  >
+                    <option selected>Children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">
+                    Make Reservation
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Booking Section -->
+
+    <!-- Sneak Peak -->
+    <div id="sneak-peak">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="heading">Sneak Peak</h1>
+          </div>
+          <div class="col-12">
+            <img src="img/hotel-3.jpg" alt="rooms-preview" />
+          </div>
+        </div>
+      </div>
+      <i class="fas fa-play-circle fa-3x fa-fw"></i>
+    </div>
+    <!-- End of Sneak Peak -->
+
+    <footer>
+      <div class="hr-rule"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-7 contact">
+            <div><i class="fas fa-envelope fa-fw"></i>ahmadinjo@gmail.com</div>
+            <div><i class="fas fa-phone fa-fw"></i>+234 816 557 6840</div>
+            <div>
+              <i class="fas fa-location-arrow fa-fw"></i>Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Repellendus incidunt modi
+              eveniet culpa dolore
+            </div>
+          </div>
+          <div class="col-lg-3 col-5">
+            <ul class="list-unstyled">
+              <li><a href="rooms.html" target="_blank">Rooms & Rates</a></li>
+              <li><a href="facilities.html" target="_blank">Restaurants</a></li>
+              <li><a href="facilities.html" target="_blank">Facilities</a></li>
+              <li><a href="rooms.html" target="_blank">Meeting Rooms</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <h4>Stay in touch</h4>
+            <p>Sign up here to recieve interesting updates</p>
+            <form action="#">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-group text-right">
+                <button type="submit" class="btn btn-lg">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../use.fontawesome.com/releases/v5.6.3/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

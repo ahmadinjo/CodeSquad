@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 5rem;
+  margin-top: -5rem;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.navbar .navbar-brand h2 {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 0.9em;
+  margin-bottom: 0;
+}
+
+.navbar .navbar-brand h2 span {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.navbar .social {
+  margin-top: 1em;
+}
+
+.navbar .social a {
+  color: #222222;
+  margin-right: 1em;
+}
+.navbar .social a:hover {
+  color: #7b8bc7;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #222222;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #7b8bc7;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #7b8bc7;
+}
+
+.slider {
+  position: relative;
+}
+
+#carouselId .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+#carouselId .carousel-inner .carousel-item .carousel-caption {
+  max-width: 100%;
+  bottom: 25%;
+}
+
+#carouselId .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#carouselId .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+}
+
+.slider .carousel-control-next {
+  position: absolute;
+  top: 80%;
+  margin-bottom: 1em;
+  width: 3em;
+  height: 4em;
+  right: 50%;
+}
+
+#booking-area {
+  padding: 2em;
+}
+
+#booking-area .form-group {
+  position: relative;
+}
+
+#booking-area .form-group .input-placeholder {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  z-index: 3;
+}
+
+#sneak-peak {
+  margin-bottom: 4em;
+}
+
+#sneak-peak .container-fluid {
+  padding: 0;
+}
+
+#sneak-peak .heading {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+#sneak-peak .heading::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  right: 45%;
+  bottom: 0.5em;
+  width: 10%;
+  background-color: #7b8bc7;
+}
+
+#sneak-peak img {
+  width: 100%;
+}
+
+footer {
+  border-top: 2px solid #7b8bc7;
+  padding: 1em 0;
+}
+
+footer .contact div {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+footer .contact div:not(:last-child) {
+  font-weight: 700;
+}
+
+footer .contact div .svg-inline--fa {
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  margin-right: 0.5em;
+}
+
+footer ul li {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 992px) {
+  #carouselId .carousel-inner .carousel-item .carousel-caption {
+    max-width: 100%;
+    bottom: 40%;
+  }
+
+  .navbar-nav.breadcrumb {
+    background-color: inherit;
+  }
+
+  .navbar-nav.breadcrumb .nav-item .breadcrumb-link {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #222222;
+  }
+  .navbar-nav.breadcrumb .nav-item .breadcrumb-link.active {
+    color: #7b8bc7;
+  }
+  .navbar-nav.breadcrumb .nav-item .breadcrumb-link:hover {
+    color: #7b8bc7;
+  }
+
+  .social {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 66px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #7b8bc7;
+    z-index: 1000000;
+  }
+
+  .social .social-link {
+    color: #222222;
+    font-size: 2em;
+  }
+
+  .social .social-link:hover {
+    color: #6b6b6b;
+  }
+}
+
+.top-image {
+  background: url("../img/hotel-0.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  margin: 66px 0;
+  width: 100%;
+  height: 30vh;
+}
+
+.facilities {
+  padding: 2em 7em;
+}
+
+.card-img {
+  height: 100%;
+}
+
+h3.card-title {
+  font-weight: 700;
+  font-size: large;
+}
+
+h3.card-title small.text-muted {
+  font-size: 0.7em;
+}
+
+.btn {
+  font-weight: 600;
+  color: white;
+  background-color: #7b8bc7;
+}
+
+#sneak-peak {
+  position: relative;
+}
+
+#sneak-peak .svg-inline--fa {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 50%;
+}
+
+#sneak-peak .svg-inline--fa:hover {
+  color: #6b6b6b;
+  cursor: pointer;
+}
+
+footer a {
+  color: #222222;
+}
+
+footer a:hover {
+  color: #7b8bc7;
+  text-decoration: none;
+}
