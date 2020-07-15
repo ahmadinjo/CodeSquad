@@ -1,0 +1,154 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title CowryHost - Web Hosting Solution
+    block styles
+      link(rel='stylesheet', href='../../stylesheets/bootstrap/bootstrap.css')
+      link(rel='stylesheet', href='../../fontawesome/releases/v5.6.3/css/all.css')
+      link(rel='stylesheet', href='../../stylesheets/animate/animate.css')
+      link(rel='stylesheet', href='css/style.css')
+  body
+    block content
+      block header
+      // Navigation Bar 
+      block nav
+        nav.navbar.navbar-expand-lg.navbar-light.fixed-top
+          
+          button.navbar-toggler.mr-2(type='button', data-toggle='collapse', data-target='#responsiveNavbar', aria-controls='responsiveNavbar', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          
+          #responsiveNavbar.collapse.navbar-collapse
+            - let navLinks = ["Home", "Hosting", "Domains", "Services", "About Us", "Contact"];
+            - let n = 0;
+            ul.navbar-nav.mt-2.mt-lg-0
+              each links in navLinks
+                if links == "Hosting" || links == "Domains" || links == "Services"
+                  - let i = 0;
+                  li.nav-item
+                    a.nav-link(href='##{links.toLowerCase()}')= links
+                    ul(class='drop-menu menu-#{++n}')
+                      while i < links.length
+                        li.drop-item
+                          a.drop-link(href='#{links[i].toLowerCase()}.html')= links.substr(0, i+1)
+                        - i++
+                else
+                  li.nav-item
+                    a.nav-link(href='#{links.toLowerCase().replace(" ", "")}.html')= links
+            - n = 0;
+        // End of Navigation Bar 
+
+      // Top Carousel Slide 
+      block topCarousel
+        #topCarousel
+          - let topSlides = "topSlides";
+          .carousel.slide.carousel-fade(id='#{topSlides}', data-ride='carousel', data-interval='20000')
+            - let nSlides = 3;
+            ul.carousel-indicators
+              while n <= nSlides
+                if n == 0
+                  li.active(data-target='##{topSlides}', data-slide-to='#{n}')
+                else
+                  li(data-target='##{topSlides}', data-slide-to='#{n}')
+                - n++
+            - n = 0;
+            .carousel-inner(role='listbox')
+              while n <= nSlides
+                if n == 0
+                  .carousel-item.active
+                    img(src='img/banner#{n+1}.jpg', alt='silde-#{n}')
+                    .carousel-caption
+                      h1 WEB DEVELOPMENT
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde nemo velit quisquam sit corrupti, praesentium facere sequi facilis magnam repellat cupiditate iste placeat natus adipisci neque reiciendis provident minus.
+                      ul.topSlide-list.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                      h3 <span>&#x20A6;</span>999.99
+                      button.btn.plans VIEW PLANS
+                      button.btn.order ORDER NOW
+                    .carousel-caption
+                      img(src='img/vps_icon.png', alt='vps_icon')
+                else
+                  .carousel-item
+                    img(src='img/slide#{n}.jpg', alt='silde-#{n}')
+                    .carousel-caption
+                      h1 WEB DEVELOPMENT
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde nemo velit quisquam sit corrupti, praesentium facere sequi facilis magnam repellat cupiditate iste placeat natus adipisci neque reiciendis provident minus.
+                      ul.topSlide-list.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                        li
+                          span.fa-li
+                            i.far.fa-check-square
+                          | Enjoy Unlimited Disk Space
+                      h3 <span>&#x20A6;</span>999.99
+                      button.btn.plans VIEW PLANS
+                      button.btn.order ORDER NOW
+                    .carousel-caption.shadow-lg
+                      img(src='img/domain-names.png', alt='vps_icon')
+                - n++
+            - n = 0;
+            a.carousel-control-prev(href='##{topSlides}', role='button', data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='##{topSlides}', role='button', data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.sr-only Next
+
+        // End of Top Carousel 
+
+      // Hosting Plans 
+      .container
+        .row
+          form.form-inline
+            .form-group
+              input.form-control(type='text', name='domain', id='domain', placeholder='www.mydomain.***')
+              button.btn.btn-primary(type='submit') <i class="fas fa-search"></i>Search
+      block plans
+        #plans
+
+        // End of Hosting Plans 
+
+      // Services 
+      block services
+        #services
+
+
+        // End of Services 
+
+      // Partners 
+      block partners
+        #partners
+
+        // End of Top Carousel 
+
+      // Footer 
+      block footer
+        #footer
+
+        // End of Footer 
+
+      script(src='../../scripts/jquery/jquery.min.js')
+      script(src='../../scripts/popper/popper.min.js')
+      script(src='../../scripts/bootstrap/bootstrap.min.js')
+      script(src='../../scripts/wow/wow.min.js')
+      script.
+        new WOW().init();
+      script(src='js/main.js')
