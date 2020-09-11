@@ -1,0 +1,88 @@
+.login-btn {
+  position: absolute;
+  top: -2.05rem;
+  right: 3.5rem;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: -400px;
+  margin-bottom: 80px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.form-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #dbdbdb;
+}
+
+.login-form-btn.btn, .register-form-btn.btn {
+  border: none;
+  border-radius: unset;
+}
+
+.form-link {
+  color: #161212;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.form-link a {
+  color: #0e0eb4;
+}
+.form-link a:hover {
+  color: #424242;
+}
+
+.form-link.reg {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.register {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: -450px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  z-index: 1;
+}
+
+.form-control.contact_input {
+  border-radius: unset;
+}
+
+label {
+  color: #FFFFFF;
+}
+label span {
+  color: #FF0000;
+}
+
+.passwordCondition {
+  display: none;
+  color: #FF0000;
+}
+
+.usernameCondition {
+  display: none;
+  color: #FF0000;
+}
+
+.firstNameCondition {
+  display: none;
+  color: #ff0000;
+}
+
+.lastNameCondition {
+  display: none;
+  color: #ff0000;
+}
