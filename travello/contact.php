@@ -1,4 +1,6 @@
+<?php ob_start();?>
 <?php session_start();?>
+<?php include 'includes/db.php';?>
 <?php $pageTitle = "contact";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/contact.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/extra.css">
+<?php include 'includes/styleslink.php'?>
 
 </head>
 <body>
@@ -142,5 +144,6 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="js/contact.js"></script>
+<?php include 'includes/jscripts.php'?>
 </body>
 </html>

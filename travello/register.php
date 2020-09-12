@@ -1,3 +1,4 @@
+<?php ob_start();?>
 <?php session_start();?>
 <?php $pageTitle = "register";?>
 <?php ob_start();?>
@@ -37,7 +38,7 @@
       $usernameErr = "Username is required";
     } else {
       $username = test_input($_POST["username"]);
-      /* if (!preg_match("/(^([a-zA-Z]+)([a-zA-Z0-9])*$){4,}/",$username)) {
+      /* if (!preg_match("/^(([a-zA-Z]+)([a-zA-Z0-9])*$){4,}/",$username)) {
         $usernameErr = "Invalid username";
       } */
     }
@@ -128,7 +129,7 @@
       type="text/css"
       href="styles/contact_responsive.css"
     />
-    <link rel="stylesheet" type="text/css" href="styles/extra.css" />
+    <?php include 'includes/styleslink.php'?>
   </head>
   <body>
     <div class="super_container">
@@ -348,7 +349,7 @@
     <script src="plugins/parallax-js-master/parallax.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
     <script src="js/contact.js"></script>
-    <script src="js/main.js"></script>
+    <?php include 'includes/jscripts.php'?>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {

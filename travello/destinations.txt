@@ -1,0 +1,181 @@
+<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_2.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Indonesia</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $579</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_3.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">San Francisco</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $399</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_4.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Paris</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $639</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_5.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Phi Phi Island</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $929</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_6.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Mykonos</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $719</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_7.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Paris</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $515</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_8.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Phi Phi Island</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $879</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="images/destination_9.jpg" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Mykonos</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $679</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+
+
+                        <div class="destination item" style="position: absolute; left: 0px; top: 0px;">
+							<div class="destination_image">
+								<img src="images/destination_1.jpg" alt="">
+								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">Bali</a></div>
+								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+								<div class="destination_price">From $679</div>
+								<div class="destination_list">
+									<ul>
+										<li>5 Stars Hotel</li>
+										<li>All Inclusive</li>
+										<li>Flight tickets included</li>
+										<li>Guided visits</li>
+									</ul>
+								</div>
+							</div>
+						</div>

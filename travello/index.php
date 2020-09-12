@@ -1,4 +1,6 @@
+<?php ob_start();?>
 <?php session_start();?>
+<?php include 'includes/db.php';?>
 <?php $pageTitle = "index";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,7 @@
     />
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="styles/extra.css" />
+    <?php include 'includes/styleslink.php'?>
   </head>
   <body>
     <div class="super_container">
@@ -138,16 +140,77 @@
       </div>
 
       <!-- Search -->
+      <?php
+
+        $cityerr = $departureerr = $arrivalerr = $budgeterr = "";
+        $city = $departure = $arrival = $budget = $departuredate = $arrivaldate = $arrivaldatestring = $departuredatestring = "";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["search"])) {
+
+          if (empty($_POST["city"]) || $_POST["city"] == "") {
+            $city = "";
+          } else {
+            $city = test_input($_POST["city"]);
+            if (!preg_match("/^[a-zA-Z- ]*$/",$city)) {
+              $city = "";
+            }
+          }
+
+          if (empty($_POST["departure"]) || $_POST["departure"] == "" || !preg_match("#(?>^(([0][1-9])|([1][0-2]))[/](([0-2][0-9])|([3][0-1]))[/](2020|2021))#",$_POST["departure"])) {
+            $departure = "";
+          } else {
+            $departure = test_input($_POST["departure"]);
+            $departuredate = date_create_from_format("m/d/Y",$departure);
+            $departuredatestring = date_format($departuredate,"d/m/Y");
+          }
+
+          if (empty($_POST["arrival"]) || $_POST["arrival"] == "" || !preg_match("#(?>^(([0][1-9])|([1][0-2]))[/](([0-2][0-9])|([3][0-1]))[/](2020|2021))#",$_POST["arrival"])) {
+            $arrival = "";
+          } else {
+            $arrival = test_input($_POST["arrival"]);
+            $arrivaldate = date_create_from_format("m/d/Y",$arrival);
+            $arrivaldatestring = date_format($arrivaldate,"d/m/Y");
+          }
+          
+          if (empty($_POST["budget"]) || $_POST["budget"] === "") {
+            $budget = 0;
+          } else {
+            $budget = test_input($_POST["budget"]);
+            if (!preg_match("/^[0-9]*$/",$budget) || !is_finite((int)$budget)) {
+              $budget = 0;
+            } else {
+              $budget = (int)$budget;
+              if ($budget < 0) {
+                $budget = 0;
+              }
+            }
+          }
+          $city = urlencode($city);
+          $submit = urlencode($_POST["search"]);
+          $arrivaldatestring = urlencode($arrivaldatestring);
+          $departuredatestring = urlencode($departuredatestring);
+          $search = "search.php?" . "city=" . $city . "&arrivaldate=" . $arrivaldatestring . "&departuredate=" . $departuredatestring . "&budget=" . $budget . "&search=" . $submit;
+
+          header("Location: " . $search);
+        }
+
+        function test_input($data) {
+          $data = trim($data);
+          $data = stripslashes($data);
+          $data = htmlspecialchars($data);
+          return $data;
+        }
+      ?>
 
       <div class="home_search">
         <div class="container">
           <div class="row">
             <div class="col">
               <div class="home_search_container">
-                <div class="home_search_title">Search for your trip</div>
+                <div class="home_search_title">Search for your trip<?php /* echo date_format($arrivaldate,"d/m/Y") */?></div>
                 <div class="home_search_content">
                   <form
-                    action="search.php"
+                    action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"
                     method="POST"
                     class="home_search_form"
                     id="home_search_form"
@@ -155,35 +218,39 @@
                     <div
                       class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start"
                     >
-                      <input
+                      <div class="form-group search_input_1"><span class="required">* <?php echo $cityerr?></span><input
                         type="text"
-                        class="search_input search_input_1"
+                        class="search_input"
                         placeholder="City"
                         name="city"
+                        value="<?php echo $city?>"
                         required="required"
-                      />
-                      <input
+                      /></div>
+                      <div class="form-group search_input_2 booking-icon"><span class="required">* <?php echo $departureerr?></span><input
                         type="text"
-                        class="search_input search_input_2"
+                        class="search_input datepicker date-input"
                         placeholder="Departure"
+                        value="<?php echo $departure?>"
                         name="departure"
                         required="required"
-                      />
-                      <input
+                      /></div>
+                      <div class="form-group search_input_3 booking-icon"><span class="required">* <?php echo $arrivalerr?></span><input
                         type="text"
-                        class="search_input search_input_3"
+                        class="search_input datepicker date-input"
                         placeholder="Arrival"
+                        value="<?php echo $arrival?>"
                         name="arrival"
                         required="required"
-                      />
-                      <input
-                        type="number"
-                        class="search_input search_input_4"
+                      /></div>
+                      <div class="form-group search_input_4 currency-icon"><span class="required">* <?php echo $budgeterr?></span><input
+                        type="text"
+                        class="search_input budget_input"
                         placeholder="Budget"
+                        value="<?php echo $budget?>"
                         name="budget"
                         required="required"
-                      />
-                      <button class="home_search_button" name="search">search</button>
+                      /></div>
+                      <button class="home_search_button" name="search" type="submit">search</button>
                     </div>
                   </form>
                 </div>
@@ -620,5 +687,7 @@
     <script src="plugins/easing/easing.js"></script>
     <script src="plugins/parallax-js-master/parallax.min.js"></script>
     <script src="js/custom.js"></script>
+    <?php include 'includes/jscripts.php'?>
+    
   </body>
 </html>

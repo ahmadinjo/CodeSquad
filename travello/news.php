@@ -1,4 +1,6 @@
+<?php ob_start();?>
 <?php session_start();?>
+<?php include 'includes/db.php';?>
 <?php $pageTitle = "news";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/news.css">
 <link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/extra.css">
+<?php include 'includes/styleslink.php.php'?>
 </head>
 <body>
 
@@ -248,5 +250,6 @@
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/news.js"></script>
+<?php include 'includes/jscripts.php'?>
 </body>
 </html>
